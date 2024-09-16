@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>USUARIO NAO CADASTRADO </title>
+        <title>Conta não encontrada </title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="style/style.css.css">
+        <link rel="stylesheet" href="style/style.css">
         <script src="../scripts/script.js"></script>
     </head>
     <!--TELA PARA USUÁRIOS QUE NÃO ESTÃO CADASTRADOS-->
@@ -15,14 +15,38 @@
                 <div class="col-md-4">
                     <div class="card card-login">
                         <div class="card-body">
-                            <h2 class="card-title text-center">ERRO 404</h2>
                             <form action="">
-                                <p> USUARIO NAO CADASTRADO </p>
+                                <div class="container text-center">
+                                    <h2 class="mt-5">Parece que você não tem uma conta!</h2>
+                                    <p>Por favor, crie uma nova conta para acessar o sistema.</p>
+                                    <a href="index.html" class="botao">Criar Conta</a>
+                                </div>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </body>
+    </body> 
 </html>
+
+<style>
+    .botao {
+        background-color: #58af9b;
+        color: #ecf0f1;
+        padding: 10px 15px;
+        text-decoration: none;
+        transition: 1s;
+        border-radius: 3px;
+        border: 2px solid transparent;
+    }
+    .botao:hover {
+        border-color: #58af9b;
+        transition: 1s;
+        background-color: white;
+        color: #58af9b;
+        padding: 9px 14px;
+        text-decoration: none;
+        border-radius: 3px;
+    }
+</style>

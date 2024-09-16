@@ -5,37 +5,72 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Login Screen</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="style/estiloLogin.css">
+        <link rel="stylesheet" href="styles/style.css">
     </head>
     <!--HTML PARA TELA DE LOGIN NO SISTEMA -->
     <body>
-        <div class="container-fluid">
-            <div class="row justify-content-center">
-                <div class="col-md-4">
-                    <div class="card card-login">
-                        <div class="card-body">
-                            <h2 class="card-title text-center">Login</h2>
-                            <form action="autenticarUsuario.jsp">
-                                <!--INFORMAR USERNAME-->
-                                <div class="form-group">
-                                    <label for="username">Username:</label>
-                                    <input type="text" id="email" name="email" class="form-control" placeholder="Digite seu email">
-                                </div>
-                                <!--INFORMAR SENHA-->
-                                <div class="form-group">
-                                    <label for="password">Senha:</label>
-                                    <input type="password" id="senha" name="senha" class="form-control" placeholder="Digite sua senha">
-                                </div>
-                                <!--BOTÕES PARA LOGIN NO SISTEMA-->
-                                <button type="submit" class="btn btn-primary btn-block">Login</button>
-                                <a href="signup.html" class="btn btn-primary btn-block">SignUp</a>
-                                <button type="reset" class="btn btn-primary btn-block">Cancela</button>
-                            </form>
+        <div class="container">
+            <div class="content first-content">
+                <div class="first-column">
+                    <h2 class="title title-primary">Bem Vindo!</h2>
+                    <p class="description description-primary">Entre com sua conta.</p>
+                    <p class="description description-primary">Ou crie uma conta</p>
+                    <button id="signin" class="btn btn-primary">Sign in</button>
+                </div>
+                <!-- OK -->
+                <div class="second-column">
+                    <!-- CRIAR CONTA -->
+                    <h2 class="title title-second">Criar conta</h2>
+                    <p class="description description-second">Informe seu email e senha</p>
+                    
+                        <form action="cadastraUsuario.jsp">
+                            <!--INSERIR USERNAME-->
+                            <div class="form-group">
+                                <input type="text" id="email" name= "email" class="form-control" placeholder="Digite seu username">
+                            </div>
+                            <!--INSERIR SENHA-->
+                            <div class="form-group">    
+                                <input type="password" id="senha" name= "senha" class="form-control" placeholder="Digite sua senha">
+                            </div>
+                            <!--BOTAO PARA SALVAR CONTA-->
+                            <button class="btn btn-second">sign up</button> 
+                        
+                    </form>          
+                </div>
+            </div>
+
+
+            <div class="content second-content">
+                <div class="first-column">
+                    <h2 class="title title-primary">Bem Vindo!</h2>
+                    <p class="description description-primary">Crie sua conta aqui...</p>  
+                    <button id="signup" class="btn btn-primary">Sign up</button>
+                </div>
+                <!-- LOGAR -->
+                <div class="second-column">
+                    <h2 class="title title-second">Entrar</h2>
+                    <p class="description description-second">Logue com sua conta pessoal</p>
+                    <form action="autenticarUsuario.jsp">
+                        <!--INFORMAR USERNAME-->
+                        <div class="form-group">
+                            <label for="username">Username:</label>
+                            <input type="text" id="email" name="email" class="form-control" placeholder="Digite seu username">
                         </div>
-                    </div>
+                        <!--INFORMAR SENHA-->
+                        <div class="form-group">
+                            <label for="password">Senha:</label>
+                            <input type="password" id="senha" name="senha" class="form-control" placeholder="Digite sua senha">
+                        </div>
+                        <!--BOTÕES PARA LOGIN NO SISTEMA-->
+                        <button type="submit" class="btn btn-second btn-block">Login</button>
+                        <button type="reset" class="btn btn-second btn-block">Cancela</button>
+                    </form>
                 </div>
             </div>
         </div>
+        
+        <script src="scripts/script.js">     
+        </script>
     </body>
 </html>
 
