@@ -5,48 +5,59 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Conta não encontrada </title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="style/style.css">
         <script src="../scripts/script.js"></script>
     </head>
     <!--TELA PARA USUÁRIOS QUE NÃO ESTÃO CADASTRADOS-->
     <body>
-        <div class="container-fluid">
-            <div class="row justify-content-center">
-                <div class="col-md-4">
-                    <div class="card card-login">
-                        <div class="card-body">
-                            <form action="">
-                                <div class="container text-center">
-                                    <h2 class="mt-5">Parece que você não tem uma conta!</h2>
-                                    <p>Por favor, crie uma nova conta para acessar o sistema.</p>
-                                    <a href="index.html" class="botao">Criar Conta</a>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="quadro">
+            <h3>Parece que você não tem uma conta!</h3>
+            <p>Por favor, crie uma nova conta para acessar o sistema.</p>
+            <a href="index.html">Criar Conta</a>
         </div>
     </body> 
 </html>
-
 <style>
-    .botao {
+    body {
+        padding: 20px 20px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background-color: #ecf0f1;
+    }
+    p{
+        color: #58af9b;
+        margin-bottom: 30px;
+    }
+    h2{
+        color: #58af9b;
+        margin-top: 30px;
+    }
+    a{
+        display: flex;
+        justify-content: center;
         background-color: #58af9b;
         color: #ecf0f1;
-        padding: 10px 15px;
+        border-radius: 20px;
+        padding: 10px 10px;
         text-decoration: none;
-        transition: 1s;
-        border-radius: 3px;
-        border: 2px solid transparent;
+        font-weight: bold;
     }
-    .botao:hover {
-        border-color: #58af9b;
-        transition: 1s;
-        background-color: white;
+    a:hover{
+        display: flex;
+        justify-content: center;
         color: #58af9b;
-        padding: 9px 14px;
+        border-radius: 20px;
+        padding: 10px 10px;
         text-decoration: none;
-        border-radius: 3px;
+        background-color: #ecf0f1;
+        border: 1px solid #58af9b;
+        transition: 2s;
+    }
+    .quadro{
+        background-color: white;
+        padding: 50px 60px;
+        border-radius: 20px;
+        border: 2px solid #58af9b;
     }
 </style>

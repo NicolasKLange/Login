@@ -1,30 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Screen</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="estilos/estiloLogin.css">
-</head>
-<!--TELA PARA USUÁRIOS QUE NÃO EFETUARAM LOGIN-->
-<body>
-    <div class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-md-4">
-        <div class="card card-login">
-          <div class="card-body">
-            <h2 class="card-title text-center">Login</h2>
-            
-            <form action="">
-                <p>Você não efetuou o login. Clique em OK para retornar</p>
-                <a href="index.html" class="btn btn-primary btn-block">OK</a>
-            </form>
-            
-          </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Screen</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    </head>
+    <!--TELA PARA USUÁRIOS QUE NÃO EFETUARAM LOGIN-->
+    <body>
+
+        <div class="quadro">
+            <h3>Você não efetuou o login. Clique em OK para retornar</h3>
+            <a href="index.html">OK</a>
         </div>
-      </div>
-    </div>
-  </div>
-</body>
+    </body>
 </html>
+<style>
+    body {
+        padding: 20px 20px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background-color: #ecf0f1;
+    }
+    h3{
+        color: #58af9b;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    a{
+        display: flex;
+        justify-content: center;
+        background-color: #58af9b;
+        color: #ecf0f1;
+        border-radius: 20px;
+        padding: 10px 10px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    a:hover{
+        display: flex;
+        justify-content: center;
+        color: #58af9b;
+        border-radius: 20px;
+        padding: 10px 10px;
+        text-decoration: none;
+        background-color: #ecf0f1;
+        border: 1px solid #58af9b;
+        transition: 2s;
+    }
+    .quadro{
+        background-color: white;
+        padding: 50px 60px;
+        border-radius: 20px;
+        border: 2px solid #58af9b;
+    }
+</style>
