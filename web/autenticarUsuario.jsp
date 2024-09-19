@@ -5,7 +5,7 @@
 --%>
 
 <!--FUNCÃO PARA AUTENTICAR USUÁRIO AO SISTEMA-->
-<%@page import="ControleFuncionario.Usuario"%>
+<%@page import="ControleLogin.Usuario"%>
 <%
     // TENTATIVAS
     Integer tentativas = (Integer) session.getAttribute("tentativas");

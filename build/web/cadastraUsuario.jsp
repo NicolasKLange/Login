@@ -5,7 +5,7 @@
 --%>
 
 <!--FUNÇÃO PARA CADASTRAR USUARIO-->
-<%@page import="ControleFuncionario.Usuario"%>
+<%@page import="ControleLogin.Usuario"%>
 <%
     String vEmail = request.getParameter("email");
     String vSenha = request.getParameter("senha");

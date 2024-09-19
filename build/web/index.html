@@ -17,36 +17,32 @@
                     <p class="description description-primary">Ou crie uma conta</p>
                     <button id="signin" class="btn btn-primary">Sign in</button>
                 </div>
-                <!-- OK -->
+                <!-- CRIAR CONTA -->
                 <div class="second-column">
-                    <!-- CRIAR CONTA -->
                     <h2 class="title title-second">Criar conta</h2>
                     <p class="description description-second">Informe seu email e senha</p>
-                    
-                        <form action="cadastraUsuario.jsp">
-                            <!--INSERIR USERNAME-->
-                            <div class="form-group">
-                                <input type="text" id="email" name= "email" class="form-control" placeholder="Digite seu username">
-                            </div>
-                            <!--INSERIR SENHA-->
-                            <div class="form-group">    
-                                <input type="password" id="senha" name= "senha" class="form-control" placeholder="Digite sua senha">
-                            </div>
-                            <!--BOTAO PARA SALVAR CONTA-->
-                            <button class="btn btn-second">sign up</button> 
-                        
-                    </form>          
+                    <form action="cadastraUsuario.jsp">
+                        <!--INSERIR USERNAME-->
+                        <div class="form-group">
+                            <input type="text" id="email" name= "email" class="form-control" placeholder="Digite seu username">
+                        </div>
+                        <!--INSERIR SENHA-->
+                        <div class="form-group">    
+                            <input type="password" id="senha" name= "senha" class="form-control" placeholder="Digite sua senha">
+                        </div>
+                        <!--BOTAO PARA SALVAR CONTA-->
+                        <button class="btn btn-second">sign up</button> 
+                    </form> 
                 </div>
             </div>
-
-
+            
             <div class="content second-content">
                 <div class="first-column">
                     <h2 class="title title-primary">Bem Vindo!</h2>
                     <p class="description description-primary">Crie sua conta aqui...</p>  
                     <button id="signup" class="btn btn-primary">Sign up</button>
                 </div>
-                <!-- LOGAR -->
+                <!-- LOGAR NA CONTA EXISTETE-->
                 <div class="second-column">
                     <h2 class="title title-second">Entrar</h2>
                     <p class="description description-second">Logue com sua conta pessoal</p>
@@ -59,6 +55,8 @@
                         <div class="form-group">
                             <input type="password" id="senha" name="senha" class="form-control" placeholder="Digite sua senha">
                         </div>
+                        <!-- LINK PARA ESQUECEU A SENHA -->
+                        <p><a class="redefinir" href="menuRedifinirSenha.jsp">Esqueceu a senha?</a></p>
                         <!--BOTÕES PARA LOGIN NO SISTEMA-->
                         <button type="submit" class="btn btn-second btn-block">Login</button>
                         <button type="reset" class="btn btn-second btn-block">Cancela</button>
@@ -66,9 +64,7 @@
                 </div>
             </div>
         </div>
-        
-        <script src="scripts/script.js">     
-        </script>
+        <script src="scripts/script.js"></script>
     </body>
 </html>
 
