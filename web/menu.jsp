@@ -13,7 +13,7 @@
             <%
                 String email = (String) session.getAttribute("usuario");
                 if (email == null) {
-                    response.sendRedirect("menu.jsp");
+                    response.sendRedirect("usuarioNaoLogado.html");
                 }
             %>
         </header>

@@ -16,7 +16,7 @@
                     <form action="redefinirSenha.jsp" method="POST">
                         <!--INFORMAR USERNAME-->
                         <div class="form-group">
-                            <input type="email" id="email" name="email" class="form-control" placeholder="Digite seu username" required>
+                            <input type="text" id="email" name="email" class="form-control" placeholder="Digite seu username" required>
                         </div>
                         <!--INFORMAR SENHA-->
                         <div class="form-group">
